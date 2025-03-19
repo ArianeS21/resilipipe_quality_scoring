@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Resilipipe"
+version = "0.1.0"
+description = "A framework that enables scalable cluster-based web content analysis for web archive data based on Resiliparse."
+authors = [
+    { name = "Sebastian Heineking" },
+    { name = "Ines Zelch" },
+    { name = "Gijs Hendriksen" }
+]
+license = { text = "Apache License 2.0" }
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "boto3==1.24.28",
+    "dill==0.3.1.1",
+    "extruct==0.16.0",
+    "fastparquet==2023.2.0",
+    "minio==7.1.0",
+    "numpy<=1.26.4",
+    "pandas==2.0.1",
+    "pantomime>=0.6.0",
+    "pyarrow==9.0.0",
+    "pyspark==3.5.0",
+    "python-iso639==2023.6.15",
+    "pyyaml==6.0",
+    "resiliparse==0.14.5",
+    "spacy==3.7.2",
+    "tldextract==5.1.1",
+    "tqdm==4.64.1",
+    "url_normalize>=1.4.3",
+    "lxml>=5.0.0,<5.1.0"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.2.1"
+]
+
+[project.urls]
+repository = "https://opencode.it4i.eu/openwebsearcheu-public/preprocessing-pipeline"
+
+[tool.setuptools.packages.find]
+include = ["resilipipe*"]

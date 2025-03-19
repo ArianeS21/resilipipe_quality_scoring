@@ -1,0 +1,8 @@
+# List of modules to use in parsing
+modules:
+    - links
+    - quality_scoring
+    - curlielabels
+    - geoparsing
+    #- collection_indices
+
