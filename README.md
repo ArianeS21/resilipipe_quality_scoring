@@ -1,5 +1,6 @@
 # Resilipipe (with Quality Scoring)
-**Note**: This README is adapted from the [original Resilipipe README](https://opencode.it4i.eu/openwebsearcheu-public/preprocessing-pipeline/-/tree/main?ref_type=heads) (Accessed on 22/01/2025)
+**Note**: This README is adapted from the [original Resilipipe README](https://opencode.it4i.eu/openwebsearcheu-public/preprocessing-pipeline/-/blob/main/README.md?ref_type=heads). 
+The repository (with exception of the [quality scoring module](resilipipe/resilipipe/parse/modules/quality_scoring.py) and the adapted [README](README.md) and [modules.yaml](resilipipe/resilipipe/conf/modules.yaml)) is a clone of the original [Resilipipe repository](https://opencode.it4i.eu/openwebsearcheu-public/preprocessing-pipeline/-/tree/main?ref_type=heads). (Accessed on 22/01/2025)
 
 Resilipipe is an open source software framework that implements a scalable 	cluster-based web content analysis pipeline for web archive data based on [Resiliparse](https://resiliparse.chatnoir.eu/).
 It can be run on HPC clusters using [Apache Spark](https://spark.apache.org/) and [Magpie](https://github.com/LLNL/magpie/).
